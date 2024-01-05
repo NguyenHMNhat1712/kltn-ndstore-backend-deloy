@@ -67,7 +67,7 @@ public class Success extends SavedRequestAwareAuthenticationSuccessHandler {
 
     public String generateRedirectURL(Boolean success, String token, AccountType social, String message) {
         logger.debug(message);
-        String CLIENT_HOST_REDIRECT = "http://localhost:3000/oauth2/redirect?token=";
+        String CLIENT_HOST_REDIRECT = "https://kltn-nd-store.vercel.app/oauth2/redirect?token=";
         return CLIENT_HOST_REDIRECT + token + "&success=" + success + "&social=" + social.toString();
     }
 }

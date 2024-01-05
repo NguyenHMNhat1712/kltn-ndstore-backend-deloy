@@ -26,7 +26,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Slf4j
 public class PaymentType {
-    public static String URL_PAYMENT = "http://localhost:3000/checkout/order/payment?complete=";
+    public static String URL_PAYMENT = "https://kltn-nd-store.vercel.app/checkout/order/payment?complete=";
     private final ApplicationContext context;
     private final OrderRepository orderRepository;
     private final JwtUtils jwtUtils;
